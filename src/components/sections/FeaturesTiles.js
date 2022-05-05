@@ -96,7 +96,7 @@ const FeaturesTiles = ({
                   Advanced Reporting
                     </h4>
                   <p className="m-0 text-sm">
-                  Enhance Kafka’s built-in reporting features
+                  Enhance Kafka's built-in reporting features
                     </p>
                 </div>
               </div>
