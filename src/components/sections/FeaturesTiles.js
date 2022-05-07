@@ -184,7 +184,7 @@ const FeaturesTiles = ({
                     Headache-Free Reporting
                     </h4>
                   <p className="m-0 text-sm">
-                    Monitoring ZooKeeper infrastructure within one interface
+                    Monitoring ZooKeeper infrastructure all within one interface
                     </p>
                 </div>
               </div>
