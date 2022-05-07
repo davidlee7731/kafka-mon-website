@@ -5,7 +5,7 @@ import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
-import background from '../assets/background/astro_rocket_tether.jpeg'
+import background from '../assets/background/astro_rocket_tether_md.jpeg'
 
 
 const Home = () => {
@@ -18,9 +18,9 @@ const Home = () => {
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center center',
     }}>
-      <Hero className="illustration-section-01" />
+      <Hero className="illustration-section" />
       <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section" />
       <Testimonial topDivider />
       <Cta split />
     </div>
