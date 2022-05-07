@@ -73,7 +73,7 @@ const FeaturesSplit = ({
                   Reports at the click of a button
                   </h3>
                 <p className="m-0">
-                  Cluster management is already difficunt. Why complicate when you can fetch reports effortlessly?
+                  Cluster management is already difficult. Why complicate when you can fetch reports effortlessly?
                   </p>
               </div>
               <div className={
@@ -119,13 +119,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Take control
                   </div>
                 <h3 className="mt-0 mb-12">
                   Data-driven insights
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Retrieve mission-critical metrics right when you need them!
                   </p>
               </div>
               <div className={
