@@ -9,6 +9,9 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import Docs from './views/Docs'
+import background from './assets/background/background.png'
+
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -35,9 +38,18 @@ const App = () => {
     <ScrollReveal
       ref={childRef}
       children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-        </Switch>
+        <div style={{
+          background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${background})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          backgroundPosition: 'center center',
+        }}>
+          <Switch>
+            <AppRoute exact path="/docs" component={Docs} layout={LayoutDefault} />
+            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          </Switch>
+        </div>
       )} />
   );
 }

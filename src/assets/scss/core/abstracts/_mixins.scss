@@ -219,3 +219,24 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin justify-content($justify) {
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	-ms-justify-content: $justify;
+	justify-content: $justify;
+	-ms-flex-pack: $justify;
+}
+@mixin align-items($align) {
+	-webkit-align-items: $align;
+	-moz-align-items: $align;
+	-ms-align-items: $align;
+	align-items: $align;
+	}

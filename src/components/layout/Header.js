@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from './partials/Logo';
+import Button from '../elements/Button';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -74,6 +75,8 @@ const Header = ({
     className
   );
 
+  const location = useLocation()
+
   return (
     <header
       {...props}
@@ -112,7 +115,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#10" onClick={closeMenu}>Documentation</Link>
+                      {location.pathname === '/' ? <Link to="/docs" onClick={closeMenu}>Documentation</Link> : <Link to="/" onClick={closeMenu}>Home</Link>}
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -120,7 +123,10 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>View on GitHub</Link>
+                      <Button tag="a" className="button button-primary button-wide-mobile button-sm" color="dark" href="https://github.com/oslabs-beta/kafkanauts">
+                    View on Github
+                    </Button>
+                        {/* <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>View on GitHub</Link> */}
                       </li>
                     </ul>}
                 </div>
