@@ -1,0 +1,68 @@
+.btn{
+  .badge-corner{
+      position: absolute;
+      top: -50%;
+      right: .5rem;
+      transform: translate(50%,50%);
+      margin: 0;
+      border: 3px solid;
+      padding-left: .5rem;
+      padding-right: .5rem;
+  }
+}
+.btn {
+  &.btn-circle {
+      border-radius: 50%;
+  }
+
+  &.btn-md {
+      padding: 0.65rem 1.25rem;
+  }
+
+  &.btn-xs {
+      padding  : 0.175rem 0.45rem;
+      font-size: 0.7rem;
+  }
+}
+
+.btn-icon-only {
+  width  : 2.575rem;
+  height : 2.575rem;
+  padding: 0;
+  @include display-flex();
+  @include justify-content(center);
+  @include align-items(center);
+
+  &.btn-xs {
+      width : 1.7rem;
+      height: 1.7rem;
+  }
+
+  &.btn-sm {
+      width : 2rem;
+      height: 2rem;
+  }
+}
+
+.copy-code-button {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  background-color: transparent;
+  color: #0a63df;
+  border: 0;
+  box-shadow: none;
+
+  &:hover {
+      background-color: #262B40;
+      color: rgb(156, 35, 35);
+      border: 0;
+      box-shadow: none;
+  }
+}
+
+.copy-code-text {
+  position: absolute;
+  top: 24px;
+  right: 90px;
+}
