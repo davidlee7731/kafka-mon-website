@@ -93,7 +93,7 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Military-grade security
+                  Look deeper
                   </div>
                 <h3 className="mt-0 mb-12">
                   Accurate, but fun visuals
@@ -135,7 +135,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/kafka_dashboard.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
